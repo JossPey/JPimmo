@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 5000px;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(10, 172, 241, 0.932);
+}
+
+.header .grid {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: 100px;
+    grid-gap: 20px;
+    grid-template-areas:
+    "a b c"
+}
+
+.header .onglets {
+    text-align: center;
+    align-self: center;
+}
+
+.header .onglets ul {
+    grid-area: a;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.header .onglets ul a li {
+    cursor: pointer;
+    color: white;
+}    
+
+.header a {
+    text-decoration: none;
+}
+
+.header .logo {
+    grid-area: b;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-size: 30px;
+    border: 6px solid white;
+    color: white;
+    border-radius: 45px;
+    width: 80px;
+    height: 80px;
+}
+
+.header .reseauxsociaux {
+    text-align: center;
+    align-self: center;
+}
+
+.header .reseauxsociaux ul {
+    grid-area: c;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    color: white;
+}
+
+.header .reseauxsociaux ul li {
+    cursor: pointer;
+} 
+
+
+
+/*--------------contain a-------------------*/
+
+.contain .grid2 {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(7 , 1fr);
+    height: 2000px;
+    grid-gap: 0px;
+    grid-template-areas:
+    "a a a"
+    "a a a"
+    "b b b"
+    "c c c"
+    "d e f"
+    "g g g"
+    "h i j"
+}
+
+.contain .a {
+    grid-area: a;
+    background-image: url(appart1.jpg);
+    background-size: cover;
+}
+
+.contain .a img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+ 
+/*-----------form-----------*/
+
+form {
+    width: 100%;
+    height: 40px;
+    margin-top: 220px;
+    text-align: center;
+ }
+  
+form input[type="text"] {
+    text-align: center;
+    height: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+form input[type="submit"] {
+    height: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+form select {
+    height: 100%;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+/*--------------contain b-------------------*/
+
+.contain .b {
+    grid-area: b;
+    text-align: center;
+    color: rgba(10, 172, 241, 0.932);
+
+}
+
+.contain .b h1 {
+    height: 120px;
+    background-color:rgba(10, 172, 241, 0.932);
+    color: white;
+    margin-top: 0;
+    padding-top: 3%;
+}
+  
+.contain .b .pre1 {
+    font-size: 100px;
+}
+
+.contain .b .pre2 {
+    font-size: 40px;
+}
+
+
+
+/*--------------contain c-------------------*/
+
+.contain .c {
+    grid-area: c;
+    text-align: center;
+}
